@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog">
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单词本名称"></TextView>
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="单词本名称"
+        android:padding="5dp"
+        android:minHeight="45dp"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="单词本描述"></TextView>
+
+    <EditText
+        android:id="@+id/text_context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
+        android:hint="单词本描述"
+        android:minHeight="45dp"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_marginTop="40dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_delete"
+        app:tint="?attr/colorPrimary">
+
+    </ImageView>
+
+
+</LinearLayout>

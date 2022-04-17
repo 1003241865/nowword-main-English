@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2b9b2</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background">#65828e</color>
+    <color name="main_color">#ff9a00</color>
+    <color name="second_arycolor">#BDBDBD</color>
+    <color name="PUBULAN">#51c4d3</color>
+    <color name="DANTAOHONG">#f6cec1</color>
+    <color name="FENHONG">#f2b9b2</color>
+    <color name="TANCCILAN">#11659A</color>
+    <color name="YANHONG">#ed5a65</color>
+    <color name="TIANYUANLV">#a4cab6</color>
+    <color name="TIANYUANLV01">#68b88e</color>
+    <color name="JIANLV">#61ac85</color>
+    <color name="YUZHANLV">#a4cab6</color>
+    <color name="MIBAI">#f9e9cd</color>
+    <color name="JINGDIANLAN">#0F4C81</color>
+    <color name="YUANQIHONG">#FD6773</color>
+    <color name="YUNHONG">#D53C31</color>
+    <color name="CONGLV">#11D5BA</color>
+    <color name="HUI">#EFEFEF</color>
+    <color name="LIANGBAI">#FDFDFD</color>
+
+    <!--绘图颜色-->
+    <color name="bar">#6CB0DF</color>
+    <color name="bar1">#B5C2CA</color>
+    <color name="bar2">#F5E6BF</color>
+    <color name="bar3">#81D8C8</color>
+    <color name="description">#686868</color>
+    <color name="line">#8CD276</color>
+    <color name="linefill">#DEEFE4</color>
+    <color name="line1">#E9C517</color>
+    <color name="line1fill">#ECEAD0</color>
+    <color name="line2">#9F8FBA</color>
+    <color name="line2fill">#EBE4F8</color>
+
+    <!--半透明-->
+    <color name="colorBanTransparent">#11000000</color>
+    <color name="colorWhite">#ffffffff</color>
+</resources>

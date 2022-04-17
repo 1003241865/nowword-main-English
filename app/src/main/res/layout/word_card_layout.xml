@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/word_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:height="80dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="parent"
+        android:textColor="@color/TANCCILAN"
+        android:textSize="40sp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/ukphone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="英式发音"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+
+        <ImageView
+            android:id="@+id/play_vioce_uk"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/icon_play_voice" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/usphone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="美式发音"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/play_vioce_us"
+
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/icon_play_voice"></ImageView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/LIANGBAI"
+        android:outlineAmbientShadowColor="@color/TANCCILAN"
+
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="例句:"
+
+                            android:gravity="center"
+                            android:textColor="@color/TANCCILAN"></TextView>
+
+                        <TextView
+                            android:id="@+id/sentence_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:text="例句"
+                            android:elevation="1dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TANCCILAN"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="英文释义"></TextView>
+                        <TextView
+                            android:id="@+id/tranEN_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:text="英文释义"
+                            android:elevation="1dp"
+
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

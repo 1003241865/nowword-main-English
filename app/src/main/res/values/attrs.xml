@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchButton">
+        <attr name="switchOpenImage" format="reference"/>
+        <attr name="switchCloseImage" format="reference"/>
+        <attr name="colorPrimary"></attr>
+        <attr name="statusBarBackground"></attr>
+        <attr name="colorButtonNormal"></attr>
+        <attr name="colorSecondary"></attr>
+        <attr name="switchStatus">
+            <enum name="open" value="0"/>
+            <enum name="close" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--绘图-->
+    <declare-styleable name="ArrowTextView">
+        <attr name="radius" format="dimension" />
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="bg" format="color" />
+    </declare-styleable>
+</resources>

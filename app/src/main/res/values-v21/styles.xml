@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" tools:ignore="DuplicateDefinition">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/PUBULAN</item>
+        <item name="colorSecondary">@color/YANHONG</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="colorControlNormal">@android:color/white</item>
+
+
+
+    </style>
+    <style name="TANGCILAN" parent="AppTheme">
+        <item name="colorPrimary">@color/TANCCILAN</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+
+   <style name="MIBAI" parent="AppTheme">
+       <item name="colorPrimary">@color/MIBAI</item>
+       <item name="colorButtonNormal">@android:color/black</item>
+       <item name="colorControlNormal">@android:color/black</item>
+   </style>
+    <style name="FENHONG" parent="AppTheme">
+        <item name="colorPrimary">@color/FENHONG</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="JINGDIANLAN" parent="AppTheme">
+        <item name="colorPrimary">@color/JINGDIANLAN</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="YUANQIHONG" parent="AppTheme">
+        <item name="colorPrimary">@color/YUANQIHONG</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="YUNHONG" parent="AppTheme">
+        <item name="colorPrimary">@color/YUNHONG</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="CONGLV" parent="AppTheme">
+        <item name="colorPrimary">@color/CONGLV</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="Toolbar_style">
+        <item name="android:scaleType">centerCrop</item>>
+    </style>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">英语帮</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="review_finish">完成词复习</string>
+    <string name="review_flag">标记词复习</string>
+    <string name="review_wrong">高危词复习</string>
+    <string name="review_need_review">待复习词复习</string>
+    <string name="review_finish_dicate">完成词听写复习</string>
+    <string name="review_flag_dicate">标记词听写复习</string>
+    <string name="review_wrong_dicate">高危词听写复习</string>
+    <string name="about">英语帮的设计初衷是基于我的毕业设计,其核心参考五五循环背单词训练法,每一个词读五遍记忆五遍,每背完一个词就会回头复习前四个词,每一天都会复习前四天的词,五五循环,巩固记忆.</string>
+</resources>

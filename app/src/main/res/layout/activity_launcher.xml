@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LauncherActivity"
+    android:background="@mipmap/sock_screen_background">
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/welcome_buttom_jump_shape"
+        android:text="跳过"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        ></ImageView>
+</RelativeLayout>

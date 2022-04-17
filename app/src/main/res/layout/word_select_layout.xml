@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="1dp"
+        android:background="@android:color/transparent"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        >
+        <RadioGroup
+            android:id="@+id/choose_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/choose_btn_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A:兄弟"
+                android:button="@null"
+                android:elevation="2dp"
+                android:background="@color/LIANGBAI"
+                android:gravity="left"
+                android:padding="15dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/HUI"></TextView>
+
+
+            <RadioButton
+                android:id="@+id/choose_btn_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="2dp"
+                android:background="@color/LIANGBAI"
+                android:gravity="left"
+                android:text="B:姐妹"
+                android:button="@null"
+                android:padding="15dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/HUI"></TextView>
+
+            <RadioButton
+                android:id="@+id/choose_btn_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LIANGBAI"
+                android:gravity="left"
+                android:elevation="2dp"
+                android:text="C:父母"
+                android:button="@null"
+                android:padding="15dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/HUI"></TextView>
+
+            <RadioButton
+                android:id="@+id/choose_btn_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:text="D:美女"
+                android:gravity="left"
+                android:button="@null"
+                android:background="@color/LIANGBAI"
+                android:padding="15dp"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

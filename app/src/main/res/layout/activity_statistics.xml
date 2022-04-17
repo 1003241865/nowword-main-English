@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="我的"
+        tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="基本数据统计"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <!--你总共学习的天数-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="你总共学习的天数："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/come_days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="1天"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+    <!--总共背诵单词-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="总共背诵单词："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/all_study_wordCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="0个"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+    <!--总共完成单词-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="总共完成单词："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/all_finish_wordCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="0个"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+    <!--总共错误单词-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:padding="10dp"
+                android:text="总共错误单词："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/all_wrong_wordCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:text="0个"
+                android:textSize="17sp"></TextView>
+        </LinearLayout>
+    <!--总共高危单词-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="总共高危单词："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/all_highwrong_wordCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="0个"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+    <!--总共标记单词-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="总共标记单词："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/all_flag_wordCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="0个"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="图形数据统计"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+    </LinearLayout>
+    <!--背诵记录折现图形-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="一周内计划完成情况"
+            android:gravity="center"
+            android:textSize="18sp"
+            >
+        </TextView>
+    </LinearLayout>
+            <com.shizhefei.view.hvscrollview.HVScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/guide_hvScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_margin="20dp"
+                app:childLayoutCenter="false"
+                app:fillViewportH="false"
+                app:fillViewportV="false"
+                app:scrollOrientation="horizontal">
+<LinearLayout
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/everydayrecord"
+            android:layout_width="500dp"
+            android:layout_height="250dp" />
+    </LinearLayout>
+            </com.shizhefei.view.hvscrollview.HVScrollView>
+    <!--错误统计饼图形-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="错误单词统计"
+            android:gravity="center"
+            android:textSize="18sp"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/wrong_word_rate"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+    </LinearLayout>
+    <!--各类型的单词统计柱状图-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:padding="10dp"
+                    android:text="各类型的单词统计"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    >
+                </TextView>
+            </LinearLayout>
+            <com.shizhefei.view.hvscrollview.HVScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_margin="20dp"
+                app:childLayoutCenter="false"
+                app:fillViewportH="false"
+                app:fillViewportV="false"
+                app:scrollOrientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/type_finish_and_wrong_count"
+                    android:layout_width="500dp"
+                    android:layout_height="350dp" />
+            </LinearLayout>
+            </com.shizhefei.view.hvscrollview.HVScrollView>
+
+
+            <!--上传和下载按钮-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  >
+                    <Button
+                        android:id="@+id/upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上传进度">
+                    </Button>
+              </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                    <Button
+                        android:id="@+id/download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下载进度">
+                    </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

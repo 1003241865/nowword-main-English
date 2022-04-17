@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">正背单词</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="review_finish">完成词复习</string>
+    <string name="review_flag">标记词复习</string>
+    <string name="review_wrong">高危词复习</string>
+    <string name="review_need_review">待复习词复习</string>
+    <string name="review_finish_dicate">完成词听写复习</string>
+    <string name="review_flag_dicate">标记词听写复习</string>
+    <string name="review_wrong_dicate">高危词听写复习</string>
+    <string name="about">本软件是一个英语背单词的APP，做这个软件的灵感来源于我们英语老师
+在课堂上所讲的五五循环背单词训练法，此方法根据人类学习记忆的遗忘曲线而设计，对于背单词有很好的帮助。因此我们将其做成了一个背英语单词的App,
+以帮助广大同学更好的学习英语。\n五五循环背单词训练法介绍：\n
+每一个词读五遍记忆五遍，每背完一个词就会回头复习前四个词，每一天都会复习前四天的词，五五循环，巩固记忆。\n
+        正背单词开发组\n朱志豪，杨卓文，章煜\n
+        如果您有任何好的建议，欢迎通过以下方式联系我们！
+    </string>
+</resources>

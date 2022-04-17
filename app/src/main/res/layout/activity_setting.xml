@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="设置"
+        tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+
+
+    <!--基本设置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="基本设置"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="开启单词锁屏"
+            android:textSize="17sp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            app:sb_checkline_color="@color/colorPrimary"
+
+            app:sb_shadow_effect="true"
+            app:sb_shadow_offset="5dp"
+            app:sb_shadow_radius="5dp"></com.suke.widget.SwitchButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="单词本"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2"
+            android:background="@null">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="需要解锁题的个数"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinner_all_number"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2"
+            android:background="@null">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="10dp"
+            android:text="每日新题的个数"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinner_new_number"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2"
+            android:background="@null">
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <!--主题设置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="主题设置"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:text="部分页面重启后生效！"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.circularreveal.CircularRevealGridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            >
+            <Button
+                android:id="@+id/style_TANGCILAN"
+                android:layout_width="60dp"
+
+                android:background="@color/TANCCILAN"
+
+                android:layout_margin="10dp"
+                android:maxEms="1"
+                android:textColor="@android:color/white"
+                android:layout_height="60dp"></Button>
+            <Button
+                android:id="@+id/style_PUBULAN"
+                android:layout_width="60dp"
+                android:layout_margin="10dp"
+
+                android:background="@color/PUBULAN"
+
+                android:maxEms="1"
+                android:textColor="@android:color/white"
+                android:layout_height="60dp"></Button>
+            <Button
+                android:id="@+id/style_MIBAI"
+                android:layout_width="60dp"
+                android:background="@color/MIBAI"
+                android:layout_margin="10dp"
+                android:maxEms="1"
+                android:textColor="@android:color/black"
+                android:layout_height="60dp"></Button>
+
+            <Button
+                android:id="@+id/style_FENHONG"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_margin="10dp"
+                android:background="@color/FENHONG"
+                android:maxEms="1"
+                android:textColor="@android:color/white"></Button>
+            <Button
+                android:id="@+id/style_JINGDIANLAN"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/JINGDIANLAN"
+                android:layout_margin="10dp"></Button>
+            <Button
+                android:id="@+id/style_YUANQIHONG"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@color/YUANQIHONG"></Button>
+            <Button
+                android:id="@+id/style_YUNHONG"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@color/YUNHONG"></Button>
+            <Button
+                android:id="@+id/style_CONGLV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@color/CONGLV"></Button>
+
+        </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

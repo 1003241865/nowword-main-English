@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/word_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="20dp">
+        <net.wujingchao.android.view.SimpleTagImageView
+            xmlns:simple="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/word_book_cover"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/review_bird"
+            simple:simple_corner_distance="50dp"
+            simple:simple_tag_textSize="15dp"
+            simple:simple_tag_text="AB"
+            simple:simple_tag_background_color="?attr/colorPrimary"
+            simple:simple_tag_orientation="left_bottom"
+            simple:simple_tag_width="17dip"
+            simple:simple_tag_textColor="@android:color/white"
+            simple:simple_tag_enable="true"
+            simple:simple_tag_round_radius="20dp"
+            ></net.wujingchao.android.view.SimpleTagImageView>
+        <TextView
+            android:id="@+id/word_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="四级"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
